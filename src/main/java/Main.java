@@ -9,7 +9,8 @@ public class Main {
     public static Connection db = null;
 public static void main(STring[] args){
     openDatabase("UserDatabase");
-    getUsers(); //im making a change so i can upload this to github
+    getUsers();
+
 }
     public static void main(String[] args) {
 
@@ -19,7 +20,7 @@ public static void main(STring[] args){
 
             PreparedStatement ps = db.prepareStatement("SELECT UserID, Username, Password FROM Users");
 
-            ResultSet results = ps.executeQuery();
+            ResultSet results = ps.executeQuery();//im making a change so i can upload this to github w
             while (results.next()) {
                 int userID = results.getInt(1);
                 String username= results.getString(2);
