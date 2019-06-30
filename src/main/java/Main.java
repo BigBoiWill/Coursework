@@ -9,7 +9,7 @@ public class Main {
     public static Connection db = null;
 public static void main(STring[] args){
     openDatabase("UserDatabase");
-    getUsers();
+    getUsers(); //im making a change so i can upload this to github
 }
     public static void main(String[] args) {
 
